@@ -1,0 +1,9 @@
+Kode sebelum membuat tabel:
+
+CREATE TRIGGER `tInsert` AFTER INSERT ON `tb_pembayaran`
+ FOR EACH ROW BEGIN UPDATE tb_siswa SET total_bayar= total_bayar + NEW.jumlah_bayar WHERE nisn= NEW.nisn; END
+ 
+ 
+ kode setelah membuat tabel:
+ 
+ BEGIN UPDATE tb_siswa SET total_bayar= total_bayar + NEW.jumlah_bayar WHERE nisn= NEW.nisn; END
