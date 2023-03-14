@@ -1,0 +1,8 @@
+kode sebelum membuat tabel:
+
+CREATE TRIGGER `tUpdate` BEFORE UPDATE ON `tb_pembayaran`
+ FOR EACH ROW UPDATE tb_siswa SET total_bayar = total_bayar - old.jumlah_bayar + new.jumlah_bayar WHERE nisn = new.nisn
+ 
+ kode setelah membuat tabel:
+ 
+ UPDATE tb_siswa SET total_bayar = total_bayar - old.jumlah_bayar + new.jumlah_bayar WHERE nisn = new.nisn
