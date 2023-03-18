@@ -1,8 +1,0 @@
-kode sebelum membuat tabel:
-
-CREATE TRIGGER `tDelete` BEFORE DELETE ON `tb_pembayaran`
- FOR EACH ROW UPDATE tb_siswa SET total_bayar = total_bayar - old.jumlah_bayar WHERE nisn = old.nisn
- 
- kode setelah membuat tabel:
- 
- UPDATE tb_siswa SET total_bayar = total_bayar - old.jumlah_bayar WHERE nisn = old.nisn
