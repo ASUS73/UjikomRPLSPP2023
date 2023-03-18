@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    background: black;
+}
+
+li {
+    display: inline-block;
+    padding: 10px;
+}
+
+li a {
+    text-decoration: none !important;
+    color: white;
+}
+
+li a:hover {
+    color: lightgray;
+}
